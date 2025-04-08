@@ -11,7 +11,7 @@ fun main() {
 
 
     if (firstNumber == enteringTheFirstNumber && secondNumber == enteringTheSecondNumber
-       || firstNumber == enteringTheSecondNumber || secondNumber == enteringTheFirstNumber)
+       || firstNumber == enteringTheSecondNumber && secondNumber == enteringTheFirstNumber)
        {println("Поздравляем! Вы выиграли главный приз!")
     }
 
