@@ -11,14 +11,15 @@ fun main() {
 
 
     if (firstNumber == enteringTheFirstNumber && secondNumber == enteringTheSecondNumber
-       || firstNumber == enteringTheSecondNumber && secondNumber == enteringTheFirstNumber)
-       {println("Поздравляем! Вы выиграли главный приз!")
-    }
-
-    else if (firstNumber == enteringTheFirstNumber || firstNumber == enteringTheSecondNumber
-        || secondNumber == enteringTheFirstNumber || secondNumber == enteringTheSecondNumber)
-        {println("Вы выиграли утешительный приз!")}
-    else {println("Неудача!")
+        || firstNumber == enteringTheSecondNumber && secondNumber == enteringTheFirstNumber
+    ) {
+        println("Поздравляем! Вы выиграли главный приз!")
+    } else if (firstNumber == enteringTheFirstNumber || firstNumber == enteringTheSecondNumber
+        || secondNumber == enteringTheFirstNumber || secondNumber == enteringTheSecondNumber
+    ) {
+        println("Вы выиграли утешительный приз!")
+    } else {
+        println("Неудача!")
     }
     println("Победные числа 18 и 20")
 }
