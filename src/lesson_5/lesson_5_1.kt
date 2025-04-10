@@ -1,13 +1,22 @@
 package lesson_5
-    const val VERIFICATION_RESULT = 10
-fun main() {
 
-    println("Напишите результат суммирования чисел 7 и 3:")
-    val result = readln().toInt()
-    if (VERIFICATION_RESULT == result) {
-        println("Добро пожаловать!")}
-    else{
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    println("Для подтверждения, что вы не бот, решите пример:")
+    val number1 = (1..10).random()
+    val number2 = (1..10).random()
+    println("$number1 + $number2 = ?")
+
+    print("Ваш ответ: ")
+    val userAnswer = scanner.nextLine()
+    val answer = userAnswer.toInt()
+    if (answer == number1 + number2) {
+        println("Добро пожаловать!")
+    } else {
         println("Доступ запрещен.")
     }
+    scanner.close()
 }
-
