@@ -2,8 +2,11 @@ package lesson_5
 
 import kotlin.random.Random
 
+const val ZERO = 0
+const val FORTY_TWO = 42
+
 fun generator(): List<Int> {
-    return (0..42).shuffled(Random.Default).take(3)
+    return (ZERO..FORTY_TWO).shuffled(Random.Default).take(3)
 }
 
 fun main() {
