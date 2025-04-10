@@ -1,14 +1,13 @@
 package lesson_4
-    const val numberOfTables = 13
-fun main() {
-    var tableReservations: Int
-    val availabilityOfTables1: Boolean
-    val availabilityOfTables2: Boolean
 
-    tableReservations = 13
-    availabilityOfTables1 = (numberOfTables) > (tableReservations)
-    tableReservations = 9
-    availabilityOfTables2 = (numberOfTables > tableReservations)
-    println("[Доступность столиков на сегодня: $availabilityOfTables1]," +
-    "[Доступность столиков на завтра: $availabilityOfTables2].")
+const val NUMBER_OF_TABLES = 13
+
+fun main() {
+    val bookedToday = 13
+    val bookedTomorrow = 9
+    val availableToday = NUMBER_OF_TABLES - bookedToday > 0
+    val availableTomorrow = NUMBER_OF_TABLES - bookedTomorrow > 0
+
+    println("[Доступность столиков на сегодня: $availableToday],\n" +
+    "[Доступность столиков на завтра: $availableTomorrow].")
 }
